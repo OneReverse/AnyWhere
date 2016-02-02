@@ -1,9 +1,5 @@
 import concurrent.IdGenerator;
-import jdk.nashorn.internal.ir.annotations.Ignore;
 import org.junit.Test;
-
-import java.util.Collection;
-
 /**
  * Created by OneReverse on 2015/10/13.
  */

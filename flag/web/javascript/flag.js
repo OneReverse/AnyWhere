@@ -1,6 +1,3 @@
-/**
- * Created by 怡轩 on 2015/7/7.
- */
 jQuery.noConflict();
 jQuery(function($){
     $("article").css("color", "yellow");
@@ -19,8 +16,13 @@ jQuery(function($){
     $(":checkbox").click(showValueOfCheckBox);
 
     function watchMouse() {
-        alert($("#index").val());
-        window.location.href="http://www.zhanqi.tv/laoshusjq?id="+$("#index").val().toString()+"&tag_id=10&forum_id=&bf_ref_url=baidutieba"
+        var t="{'firstName': 'cyra', 'lastName': 'richardson', 'address': { 'streetAddress': '1 Microsoft way', 'city': 'Redmond', 'state': 'WA', 'postalCode': 98052 },'phoneNumbers': [ '425-777-7777','206-777-7777' ] }";
+        var jsonobj=eval('('+t+')');
+        alert(jsonobj.firstName);
+        //alert(jsonobj.lastName);
+        $("#index").val(jsonobj.address.streetAddress);
+        //alert($("#index").val());
+        //window.location.href="http://www.zhanqi.tv/laoshusjq?id="+$("#index").val().toString()+"&tag_id=10&forum_id=&bf_ref_url=baidutieba"
     }
 
     function collectTime() {
