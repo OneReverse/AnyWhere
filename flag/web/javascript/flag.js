@@ -27,6 +27,7 @@ jQuery(function($){
 
     function collectTime() {
         var time = {
+            ii : undefined,
             year : $("#year").val(),
             month : $("#month").val(),
             day : $("#day").val()
