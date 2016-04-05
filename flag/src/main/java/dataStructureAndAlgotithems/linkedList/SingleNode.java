@@ -1,4 +1,4 @@
-package dataStructureAndAlgotithems.linkedTable;
+package dataStructureAndAlgotithems.linkedList;
 
 public class SingleNode {
     public int itsValue;

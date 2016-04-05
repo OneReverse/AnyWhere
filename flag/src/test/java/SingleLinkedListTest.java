@@ -1,13 +1,13 @@
-import dataStructureAndAlgotithems.linkedTable.LinkedNodes;
-import dataStructureAndAlgotithems.linkedTable.SingleNode;
+import dataStructureAndAlgotithems.linkedList.SingleLinkedList;
+import dataStructureAndAlgotithems.linkedList.SingleNode;
 import org.junit.Test;
 
-public class LinkedElements {
+public class SingleLinkedListTest {
 
     @Test(expected = IllegalArgumentException.class)
     public void initializeLinkedNodes() {
         SingleNode node1 = null;
-        LinkedNodes table = LinkedNodes.LinkNodesWith(node1);
+        SingleLinkedList table = SingleLinkedList.LinkNodesWith(node1);
         table.walkThrough();
     }
 
@@ -15,7 +15,7 @@ public class LinkedElements {
     public void workThroughLinkedTable() {
         SingleNode node1 = new SingleNode(1);
         SingleNode node2 = new SingleNode(2);
-        LinkedNodes table = LinkedNodes.LinkNodesWith(node1);
+        SingleLinkedList table = SingleLinkedList.LinkNodesWith(node1);
         table.add(node2);
         table.walkThrough();
     }
@@ -27,7 +27,7 @@ public class LinkedElements {
         SingleNode node3 = new SingleNode(3);
         SingleNode node4 = new SingleNode(4);
         SingleNode node5 = new SingleNode(5);
-        LinkedNodes table = LinkedNodes.LinkNodesWith(node1);
+        SingleLinkedList table = SingleLinkedList.LinkNodesWith(node1);
         table.add(node2);
         table.add(node3);
         table.add(node4);
@@ -44,7 +44,7 @@ public class LinkedElements {
         SingleNode node3 = new SingleNode(3);
         SingleNode node4 = new SingleNode(4);
         SingleNode node5 = new SingleNode(5);
-        LinkedNodes table = LinkedNodes.LinkNodesWith(node1);
+        SingleLinkedList table = SingleLinkedList.LinkNodesWith(node1);
         table.add(node2);
         table.add(node3);
         table.add(node4);

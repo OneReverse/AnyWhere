@@ -1,14 +1,14 @@
-package dataStructureAndAlgotithems.linkedTable;
+package dataStructureAndAlgotithems.linkedList;
 
-public class LinkedNodes {
+public class SingleLinkedList {
     private SingleNode root;
 
-    private LinkedNodes() {}
+    private SingleLinkedList() {}
 
-    public static LinkedNodes LinkNodesWith(SingleNode rootNode) {
+    public static SingleLinkedList LinkNodesWith(SingleNode rootNode) {
         if (rootNode == null)
             throw new IllegalArgumentException("root node mustn't be null");
-        LinkedNodes linkedTable = new LinkedNodes();
+        SingleLinkedList linkedTable = new SingleLinkedList();
         linkedTable.root = rootNode;
         return linkedTable;
     }
@@ -43,9 +43,8 @@ public class LinkedNodes {
     }
 
     public void invertFrom(SingleNode startNode) {
-        SingleNode copyOfStart = startNode;
         invert(startNode);
-        copyOfStart.next = null;
+        startNode.next = null;
     }
 
     private void invert(SingleNode node) {
